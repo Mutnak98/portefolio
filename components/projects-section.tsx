@@ -113,7 +113,11 @@ export function ProjectsSection() {
                   <div className="mt-4 flex gap-3">
                     <button
                       type="button"
-                      onClick={() => setSelectedProject(project)}
+                      onClick={(e) => {
+                        e.preventDefault()
+                        e.stopPropagation() 
+                        setSelectedProject(project)
+                      }}
                       className="text-xs text-muted-foreground transition-colors duration-150 hover:text-foreground"
                     >
                       {"Détails \u2192"}
