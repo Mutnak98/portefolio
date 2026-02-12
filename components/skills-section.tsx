@@ -25,7 +25,7 @@ const skillCategories = [
   },
   {
     title: "Diagnostic",
-    skills: ["Dump système", "Analyse binaire", "Core dump"],
+    skills: ["Dump système", "Core dump"],
   },
 ]
 
